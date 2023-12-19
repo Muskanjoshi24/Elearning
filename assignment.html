@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+        <div class="container">
+        
+        <header>
+        
+            <a href="#" class="logo">Learn<span>Lab</span></a>
+        
+            <div id="menu" class="fas fa-bars"></div>
+        
+            <nav class="navbar">
+                <a href="home.html">home</a>
+                <a href="course.html">course</a>
+                <a href="teacher.html">teacher</a>
+                <a href="assignment.html">assignment</a>
+                <a href="price.html">price</a>
+                <a href="review.html">review</a>
+                <a href="contact.html">contact</a>
+            </nav>
+        
+        </header>
+        <h1 class="heading">assignment</h1>
+
+    <div id="quiz-container">
+        <h1>JavaScript Quiz</h1>
+        <div id="question-container"></div>
+        <div id="options-container"></div>
+        <button id="next-button" onclick="nextQuestion()">Next</button>
+        <div id="result-container"></div>
+    </div>
+
+    <script src="js/assignment.js"></script>
+
+<!-- Assignment Submission Section -->
+<div id="assignment-container">
+        <h2>Assignment Submission</h2>
+        <form id="assignment-form" action="upload.php" method="post" enctype="multipart/form-data" onsubmit="return submitAssignment()">
+            <label for="assignment-file">Select File:</label>
+            <input type="file" name="assignment-file" id="assignment-file" accept=".pdf, .doc, .docx">
+            <button type="submit">Submit Assignment</button>
+        </form>
+        <div id="submission-message"></div>
+    </div>
+
+
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Empowering learners through accessible e-learning for continuous skill enhancement.
+            </p>
+        </div>
+
+        
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+           <p> <i class="fas fa-phone"></i>1234567890 </p>
+           <p> <i class="fas fa-envelope"></i> learnlab@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i> Indore, india</p>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> Muskan Joshi </span> | all rights reserved </div>
+</section>
+    <script src="js/assignment.js"></script>
+</body>
+</html>
